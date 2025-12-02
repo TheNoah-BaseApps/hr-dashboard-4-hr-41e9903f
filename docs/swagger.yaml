@@ -1,0 +1,43 @@
+openapi: 3.0.0
+info:
+  title: HR Dashboard 4
+  version: 1.0.0
+servers:
+  - url: http://localhost:3000
+paths:
+  /api/onboarding:
+    get:
+      summary: Get all onboarding tasks
+    post:
+      summary: Create new onboarding task
+  /api/onboarding/:id:
+    get:
+      summary: Get specific onboarding task
+    put:
+      summary: Update onboarding task
+    delete:
+      summary: Delete onboarding task
+  /api/leave-attendance:
+    get:
+      summary: Get all leave and attendance records
+    post:
+      summary: Create new leave request
+  /api/leave-attendance/:id:
+    get:
+      summary: Get specific leave record
+    put:
+      summary: Update leave record
+    delete:
+      summary: Delete leave record
+  /api/payroll:
+    get:
+      summary: Get all payroll records
+    post:
+      summary: Create new payroll record
+  /api/payroll/:id:
+    get:
+      summary: Get specific payroll record
+    put:
+      summary: Update payroll record
+    delete:
+      summary: Delete payroll record
